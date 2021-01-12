@@ -1,0 +1,2 @@
+rootProject.name='TestTiles'
+include ':app'

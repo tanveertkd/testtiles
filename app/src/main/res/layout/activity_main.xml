@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:id="@+id/network_failed_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_no_network"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/no_internet_connection"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            style="@style/TextColorYellow"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingBottom="?attr/actionBarSize"/>
+
+</LinearLayout>
